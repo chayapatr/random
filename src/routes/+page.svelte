@@ -9,19 +9,19 @@
 	{/each}
 	<div class="flex gap-2">
 		<button
-			class="w-full rounded-md bg-neutral-600 px-2 py-1 text-white"
+			class="w-full rounded-md bg-neutral-700 px-2 py-1 text-white"
 			on:click={() => {
 				choice = [...choice, ''];
 			}}>+</button
 		>
 		<button
-			class="w-full rounded-md bg-neutral-600 px-2 py-1 text-white"
+			class="w-full rounded-md bg-neutral-700 px-2 py-1 text-white"
 			on:click={() => {
 				rand = choice[Math.floor(Math.random() * choice.length)];
 			}}>🎲</button
 		>
 	</div>
-	<div class="items-cejter flex justify-center">
+	<div class="flex items-center justify-center">
 		<div class={`w-min rounded-md bg-neutral-900 text-white ${rand === '' ? undefined : 'p-2'}`}>
 			{rand}
 		</div>
